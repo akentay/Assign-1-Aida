@@ -1,0 +1,159 @@
+/* General */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+  color: #333;
+}
+
+header {
+  background-color: #6c63ff;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: #4c45d0;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Layout (Task 1) */
+#container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#sidebar {
+  width: 25%;
+  float: left;
+  background: #dcdcff;
+  padding: 15px;
+}
+
+#main {
+  width: 70%;
+  float: right;
+  padding: 15px;
+  background: white;
+  min-height: 300px;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  padding: 15px;
+  background-color: #eee;
+  color: #666;
+  margin-top: 20px;
+}
+
+/* Tribute Page (Task 2) */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.content img {
+  max-width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  display: block;
+  margin: 10px auto;
+}
+
+.btn {
+  display: inline-block;
+  background: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: #4c45d0;
+}
+
+/* Table (Task 3) */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+}
+
+th {
+  background: #6c63ff;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.highlight-row {
+  background: #ffe4b5 !important;
+}
+
+/* Form (Task 3) */
+form {
+  width: 50%;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4c45d0;
+}
