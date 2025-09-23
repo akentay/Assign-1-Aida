@@ -2,43 +2,182 @@
 <html lang="kk">
 <head>
   <meta charset="UTF-8">
-  <title>Онлайн оқу платформасы</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="eye.png" type="image/png">
+  <title>Online Education Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background-color: #6c63ff;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    nav {
+      background-color: #4c45d0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px 25px;
+      display: block;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #372f91;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px;
+      background-color: white;
+    }
+
+    .hero img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .hero h2 {
+      margin-top: 20px;
+      font-size: 28px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 20px;
+      text-decoration: none;
+      background-color: #6c63ff;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: #4c45d0;
+    }
+
+    .form-section {
+      background-color: #fff;
+      padding: 40px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .form-section h3 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-section label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-section input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .form-section button {
+      width: 100%;
+      padding: 12px;
+      background-color: #6c63ff;
+      border: none;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-section button:hover {
+      background-color: #4c45d0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      color: #666;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
-    <h1>Онлайн оқу платформасы</h1>
-    <p>Біліміңді арттыр, өзіңе сен!</p>
+    <h1>Online Educational Platform</h1>
+    <p>Learn anytime, anywhere 📚</p>
   </header>
 
-  <center>
-    <div class="image-container">
-      <img src="https://avatars.mds.yandex.net/i?id=61d7479afa3bb73ff8f69001b8b8fc9a_l-5269624-images-thumbs&n=13" alt="main image">
-      <button id="openModalBtn">Оқуды Бастау!</button>
-    </div>
-    <a href="https://www.youtube.com/@eduonlineacademia9844" target="_blank">Our YouTube channel</a>
-  </center>
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Courses</a>
+    <a href="#">Progress</a>
+    <a href="#">Contact</a>
+  </nav>
 
-  <!-- Модал терезе -->
-  <div class="modal" id="registerModal">
-    <div class="modal-content">
-      <span class="close" id="closeModal">&times;</span>
-      <h2>Тіркелу</h2>
-      <form id="registerForm">
-        <input type="text" placeholder="Атыңызды енгізіңіз" required>
-        <input type="email" placeholder="Email" required>
-        <input type="password" placeholder="Құпия сөз" required>
-        <button type="submit">Тіркелу</button>
-      </form>
-    </div>
-  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="edu.jpg" alt="Online Education">
+    <h2>Welcome to Your Learning Journey!</h2>
+    <p>Here you can explore lessons, track your progress, and test your knowledge.</p>
+    <a href="#register">Get Started</a>
+  </section>
 
+  <!-- Registration Form -->
+  <section class="form-section" id="register">
+    <h3>Register Now</h3>
+    <form>
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Аида Кентай. Барлық құқықтар қорғалған.</p>
+    <p>© 2025 Online Education Platform. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
