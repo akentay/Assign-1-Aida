@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Education</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="flex-header">
+  <div class="logo">Student Grades & Feedback</div>
+   <nav class="nav-links">
+    <a href="eduonline.html">Басты Бет</a>
+    <a href="tribute.html">Курстар</a>
+    <a href="table-form.html">Прогресс</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="portfolio.html">Портфолио</a>
+  </nav>
+  </header>
+  
+
+<center><h2 id="grades">Student Grades</h2></center>
+<table colspan="2">
+  <tr>
+    <th>Name</th>
+    <th>Subject</th>
+    <th>Grade</th>
+  </tr>
+  <tr>
+    <td>Aida</td>
+    <td>Web Dev</td>
+    <td>A</td>
+  </tr>
+  <tr class="highlight-row">
+    <td>Arman</td>
+    <td>Math</td>
+    <td>B+</td>
+  </tr>
+  <tr>
+    <td colspan="2">Overall Average</td>
+    <td>A-</td>
+  </tr>
+</table>
+
+<center><h2>Feedback Form</h2></center>
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email">
+
+  <label for="role">Role:</label>
+  <select id="role">
+    <option>Student</option>
+    <option>Teacher</option>
+    <option>Other</option>
+  </select>
+
+  <label>Do you like this course?</label>
+  <input type="radio" name="like" value="yes"> Yes
+  <input type="radio" name="like" value="no"> No
+
+  <label for="comments">Comments:</label>
+  <textarea id="comments" rows="4"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+<footer>
+  <p>© 2025 Online Education</p>
+</footer>
+</body>
+</html>
