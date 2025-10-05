@@ -1,37 +1,51 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gallery</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduOnline — Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="flex-header">
-  <div class="logo">EduOnline</div>
-  <nav class="nav-links">
-    <a href="eduonline.html">Басты Бет</a>
-    <a href="tribute.html">Курстар</a>
-    <a href="table-form.html">Прогресс</a>
-    <a href="gallery.html">Галерея</a>
-    <a href="portfolio.html">Портфолио</a>
-  </nav>
-</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="eduonline.html">EduOnline</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="eduonline.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="tribute.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="table-form.html">Progress</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<h2 style="text-align:center;">Image Gallery</h2>
-<div class="gallery">
-  <div class="gallery-item"><img src="edu.jpg" alt=""><span>Image 1</span></div>
-  <div class="gallery-item"><img src="edu.jpg" alt=""><span>Image 2</span></div>
-  <div class="gallery-item"><img src="edu.jpg" alt=""><span>Image 3</span></div>
-  <div class="gallery-item"><img src="edu.jpg" alt=""><span>Image 4</span></div>
-  <div class="gallery-item"><img src="edu.jpg" alt=""><span>Image 5</span></div>
-  <div class="gallery-item"><img src="edu.jpg" alt=""><span>Image 6</span></div>
-  <div class="gallery-item"><img src="edu.jpg" alt=""><span>Image 7</span></div>
-  <div class="gallery-item"><img src="edu.jpg" alt=""><span>Image 8</span></div>
-  <div class="gallery-item"><img src="edu.jpg" alt=""><span>Image 9</span></div>
-</div>
+<main class="container my-5">
+  <h1 class="text-center mb-4">Image Gallery</h1>
 
-<footer>
-  <p>© 2025 Online Education</p>
+  <div class="gallery">
+    <!-- Use 9 different images placed in images/ folder -->
+    <div class="gallery-item"><img src="images/img1.jpg" alt="Image 1"><span>Image 1</span></div>
+    <div class="gallery-item"><img src="images/img2.jpg" alt="Image 2"><span>Image 2</span></div>
+    <div class="gallery-item"><img src="images/img3.jpg" alt="Image 3"><span>Image 3</span></div>
+    <div class="gallery-item"><img src="images/img4.jpg" alt="Image 4"><span>Image 4</span></div>
+    <div class="gallery-item"><img src="images/img5.jpg" alt="Image 5"><span>Image 5</span></div>
+    <div class="gallery-item"><img src="images/img6.jpg" alt="Image 6"><span>Image 6</span></div>
+    <div class="gallery-item"><img src="images/img7.jpg" alt="Image 7"><span>Image 7</span></div>
+    <div class="gallery-item"><img src="images/img8.jpg" alt="Image 8"><span>Image 8</span></div>
+    <div class="gallery-item"><img src="images/img9.jpg" alt="Image 9"><span>Image 9</span></div>
+  </div>
+</main>
+
+<footer class="bg-primary text-white text-center py-3">
+  © 2025 EduOnline
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
