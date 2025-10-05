@@ -1,49 +1,80 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Online Education</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduOnline — Courses</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="flex-header">
- <div class="logo">Курстар</div>
-  <nav class="nav-links">
-    <a href="eduonline.html">Басты Бет</a>
-    <a href="tribute.html">Курстар</a>
-    <a href="table-form.html">Прогресс</a>
-    <a href="gallery.html">Галерея</a>
-    <a href="portfolio.html">Портфолио</a>
-  </nav>
-  </header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand" href="eduonline.html">EduOnline</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="eduonline.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="tribute.html">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="table-form.html">Progress</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="container my-5">
+  <h1 class="mb-4">Courses</h1>
 
-<div class="content">
-  <h1>Курстар Тізімі</h1>
-  <h2>Сабақтар:</h2>
-  <section class="card-row">
-  <div class="card">
-    <img src="edu.jpg" alt="Course">
-    <h3>Web Development</h3>
-    <p>HTML, CSS, JavaScript негіздері.</p>
-    <a href="https://srs.myrusakov.ru/freemakeup2?utm_source=YandexDirect&utm_campaign=111546637&utm_content=1843366992053076920&utm_term=---autotargeting&ybaip=1&yclid=12482129862323077119" class="btn">Көбірек</a>
-  </div>
-  <div class="card">
-    <img src="edu.jpg" alt="Course">
-    <h3>Data Science</h3>
-    <p>Python және деректер талдауы.</p>
-    <a href="https://srs.myrusakov.ru/freenn?utm_source=YandexDirectMaster&utm_campaign=109880903&utm_content=16163721574&utm_term=---autotargeting&ybaip=1&yclid=17231453087583436799#order" class="btn">Көбірек</a>
-  </div>
-  <div class="card">
-    <img src="edu.jpg" alt="Course">
-    <h3>Design</h3>
-    <p>UI/UX және графикалық дизайн.</p>
-    <a href="https://practicum.yandex.kz/interface-designer/?utm_source=yandex&utm_medium=cpc&utm_campaign=Yan_MK_KZ_Common_Resk_b2c_Gener_Regular_Shop_460&utm_content=sty_search%3As_none%3Acid_115673789%3Agid_5570714829%3Apid_205570714829%3Aaid_17311734677%3Acrid_0%3Arid_205570714829%3Ap_2%3Apty_premium%3Amty_%3Amkw_%3Adty_desktop%3Acgcid_0%3Arn_Астана%3Arid_163&utm_term=---autotargeting&ybaip=1&yclid=3373826519497965567" class="btn">Көбірек</a>
-  </div>
-</section>
-</div>
+  <!-- Card row built with Bootstrap grid (responsive) -->
+  <div class="row g-4">
+    <div class="col-lg-4 col-md-6">
+      <article class="card h-100 course-card">
+        <img src="images/webdev.jpg" class="card-img-top" alt="Web Development course">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Web Development</h5>
+          <p class="card-text">Learn HTML, CSS and JavaScript basics.</p>
+          <a class="btn btn-primary mt-auto" href="https://example.com/webdev" target="_blank" rel="noopener noreferrer">More</a>
+        </div>
+      </article>
+    </div>
 
-<footer>
-  <p>© 2025 Online Education</p>
+    <div class="col-lg-4 col-md-6">
+      <article class="card h-100 course-card">
+        <img src="images/datascience.jpg" class="card-img-top" alt="Data Science course">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Data Science</h5>
+          <p class="card-text">Python and data analysis fundamentals.</p>
+          <a class="btn btn-primary mt-auto" href="https://example.com/datascience" target="_blank" rel="noopener noreferrer">More</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="col-lg-4 col-md-6">
+      <article class="card h-100 course-card">
+        <img src="images/design.jpg" class="card-img-top" alt="Design course">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Design</h5>
+          <p class="card-text">UI/UX and graphic design basics.</p>
+          <a class="btn btn-primary mt-auto" href="https://example.com/design" target="_blank" rel="noopener noreferrer">More</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <h2>Intro Video</h2>
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/8KkKuTCFvzI" title="Intro video" allowfullscreen></iframe>
+  </div>
+</main>
+
+<footer class="bg-primary text-white text-center py-3">
+  © 2025 EduOnline
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
