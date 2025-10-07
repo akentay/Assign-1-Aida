@@ -6,12 +6,6 @@ The website demonstrates modern **HTML5**, **CSS3**, and **Bootstrap 5** techniq
 
 This project was created as part of the **Midterm Project** for the *Web Technologies* course.
 
----
-
-## 🌐 Live Demo
-🔗 **Published on GitHub Pages / Netlify:**  
-*(Add your published link here, e.g. https://aida-kentay.github.io/EduOnline)*
-
 
 ---
 
