@@ -3,6 +3,7 @@
   --primary:#6c63ff;
   --muted:#f2f2f2;
   --card-bg:#ffffff;
+  --max-width:1140px;
 }
 *{box-sizing:border-box}
 body{
@@ -13,12 +14,19 @@ body{
   line-height:1.4;
 }
 
+/* Navbar */
+.navbar { background: var(--primary) !important; }
+.navbar .navbar-brand { font-weight:700; letter-spacing:0.3px; }
+
+/* Container helper */
+.container { max-width: var(--max-width); }
+
 /* Intro block */
-.intro{background:var(--card-bg); border-radius:8px; padding:30px; box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.intro { background:var(--card-bg); border-radius:8px; padding:30px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
 
 /* Cards */
-.course-card img{height:180px; object-fit:cover}
-.course-card .card-body{display:flex; flex-direction:column}
+.course-card img { height:180px; object-fit:cover; }
+.course-card .card-body { display:flex; flex-direction:column; }
 
 /* Project card */
 .project-card{
@@ -27,7 +35,9 @@ body{
   border-radius:10px;
   box-shadow:0 6px 16px rgba(0,0,0,0.06);
   border:1px solid #eee;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
+.project-card:hover { transform: translateY(-6px); box-shadow:0 10px 24px rgba(0,0,0,0.12); }
 
 /* Gallery grid */
 .gallery{
@@ -36,11 +46,12 @@ body{
   gap:18px;
 }
 .gallery-item{position:relative; overflow:hidden; border-radius:8px}
-.gallery-item img{width:100%; height:220px; object-fit:cover; display:block}
+.gallery-item img{width:100%; height:220px; object-fit:cover; display:block; transition: transform .25s ease;}
 .gallery-item span{
   position:absolute; left:0; right:0; bottom:0; text-align:center;
   background:rgba(0,0,0,0.55); color:#fff; padding:8px; opacity:0; transition:all .25s;
 }
+.gallery-item:hover img { transform: scale(1.05); }
 .gallery-item:hover span{opacity:1}
 
 /* Table highlight */
@@ -51,16 +62,11 @@ html{font-size:14px}
 @media (min-width:601px){ html{font-size:15px} }
 @media (min-width:901px){ html{font-size:16px} }
 
-/* Responsive layout for three boxes example:
-   (If you create a .three-boxes container) */
+/* Responsive layout for three boxes example */
 .three-boxes{display:flex; gap:16px; flex-wrap:wrap}
 .three-boxes .box{flex:1; min-width:260px; background:#fff; padding:18px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.04)}
-/* For tablet two in a row and mobile stacked are achieved by min-width in box above */
 
-/* Small utility */
-.container{max-width:1140px}
-
-/* Media query for gallery and portfolio responsive behavior */
+/* Media queries for gallery and portfolio */
 @media (max-width:900px){
   .gallery{grid-template-columns:repeat(2,1fr)}
   .project-card{padding:16px}
@@ -74,3 +80,6 @@ html{font-size:14px}
 
 /* Accessibility helpers */
 a.btn{cursor:pointer}
+
+/* Small utility */
+.text-center { text-align: center; }
