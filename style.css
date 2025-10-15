@@ -62,24 +62,113 @@ html{font-size:14px}
 @media (min-width:601px){ html{font-size:15px} }
 @media (min-width:901px){ html{font-size:16px} }
 
-/* Responsive layout for three boxes example */
-.three-boxes{display:flex; gap:16px; flex-wrap:wrap}
-.three-boxes .box{flex:1; min-width:260px; background:#fff; padding:18px; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.04)}
-
-/* Media queries for gallery and portfolio */
-@media (max-width:900px){
-  .gallery{grid-template-columns:repeat(2,1fr)}
-  .project-card{padding:16px}
-  .portfolio-grid{grid-template-columns:1fr}
-}
-@media (max-width:600px){
-  .gallery{grid-template-columns:1fr}
-  .intro{padding:20px}
-  html{font-size:14px}
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Accessibility helpers */
-a.btn{cursor:pointer}
+/* Titles inside cards */
+.project-card h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #4c45d0;
+}
 
-/* Small utility */
-.text-center { text-align: center; }
+/* Buttons inside cards */
+.project-card button {
+  align-self: flex-start;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.project-card button:hover {
+  background: #4c45d0;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* одна колонка */
+  }
+}
+
+footer { 
+  clear: both; 
+  text-align: center; 
+  padding: 15px; 
+  background-color:#6c63ff; 
+  color: #faf9f9; 
+  margin-top: 20px; 
+  border: #333; }
+
+  /* Tribute Page (Task 2) */ 
+  .content { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; }
+
+    /* Form (Task 3) */ 
+    form { width: 50%; 
+      margin: 20px auto; 
+      background: white; 
+      padding: 20px; 
+      border-radius: 8px; 
+    } 
+    
+    label { 
+      font-weight: bold; 
+      display: block; 
+      margin-top: 10px; 
+    } 
+    input, select, textarea { 
+      width: 100%; 
+      padding: 8px; 
+      margin-top: 5px; 
+      border: 1px solid #ccc; 
+      border-radius: 6px; 
+    } 
+    button { 
+      margin-top: 15px; 
+      padding: 10px; 
+      background: #6c63ff; 
+      color: white; 
+      border: none; 
+      border-radius: 6px; 
+      cursor: pointer; 
+    } 
+    button:hover { 
+      background: #4c45d0; 
+    } 
+
+    /* Table (Task 3) */ 
+    table { 
+      width: 80%; 
+      margin: 20px auto; 
+      border-collapse: collapse; 
+      background: white; 
+    } 
+    th { 
+      background: #6c63ff; 
+      color: white; 
+      padding: 10px; 
+    }
+
+    td { 
+      border: 1px solid #ccc; 
+      padding: 10px; 
+      text-align: center; 
+    } 
+    tr:nth-child(even) { 
+      background: #f9f9f9; 
+    } 
+    .highlight-row { 
+      background: #ffe4b5 !important; 
+    }
